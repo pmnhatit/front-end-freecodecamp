@@ -5,7 +5,6 @@ const AddText = function({addItem}){
     const [input, setInput] = useState('');
 
     const handleClick = (e) =>{
-        e.preventDefault();
         setIsOpen(!isOpen);
     }
 
