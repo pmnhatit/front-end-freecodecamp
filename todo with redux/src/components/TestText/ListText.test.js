@@ -30,18 +30,18 @@ const mockProps = {
   role: role
 };
 
-describe('<TodoList />', () => {    
+describe('<ListText />', () => {    
     
-    it('should have 2 todo item', () => {
+    it('should have 2 text item', () => {
         // console.log(wrapper.debug());
         const wrapper = shallow(<ListText textItems={items}/>)
         expect(wrapper.find(ItemText)).toHaveLength(2);
     });
 
-    it('should delete', () => {
-      const wrapper = mount(<ListText {...mockProps}/>);
-      wrapper.find(ItemText).at(0).find('#delete').simulate('click');
-      expect(wrapper.find(ItemText)).toHaveLength(1);
-    });
+    // it('should delete', () => {
+    //   const wrapper = mount(<ListText {...mockProps}/>);
+    //   wrapper.find(ItemText).at(0).find('#delete').simulate('click');
+    //   expect(wrapper.find(ItemText)).toHaveLength(1);
+    // });
 
 });

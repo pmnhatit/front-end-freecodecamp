@@ -3,6 +3,7 @@ import React from "react";
 const RoleButton = function({role, changeRole}){
 
     const handleChangeRole = (e)=>{
+        // e.preventDefault();
         if(e.target.id==='admin'){
             changeRole(0);
         }

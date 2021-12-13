@@ -9,18 +9,16 @@ const ItemImage = function({item, deleteItem, saveAnswer, role}){
     const [isAnswer, setIsAnswer] = useState(false);
 
     const handleDelete = (e) =>{
-        e.preventDefault();
         deleteItem(item.id);
     }
 
     const handleIsAnswer = (e) =>{
-        e.preventDefault();
         setIsAnswer(!isAnswer);
     }
 
     return(<>
         <div>
-        <li key={item.id}>{item.content} </li>
+        <li key={item.id}>{item.content}</li>
                 {item.answer!=='' && 
                     <span>Your answer: <img style={styles.image} src={item.answer}/></span>}
         </div>

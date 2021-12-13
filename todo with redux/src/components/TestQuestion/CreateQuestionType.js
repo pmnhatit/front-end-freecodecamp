@@ -10,7 +10,6 @@ const CreateQuestionType = function({type, addTextItem, addImageItem, closeQuest
     }
 
     const handleSaveQuestion = (e) =>{
-        e.preventDefault();
         if(type==='text'){
             addTextItem(input);
         }else{
@@ -22,7 +21,6 @@ const CreateQuestionType = function({type, addTextItem, addImageItem, closeQuest
     }
     
     const handleClose = (e) =>{
-        e.preventDefault();
         closeQuestion();
     }
 

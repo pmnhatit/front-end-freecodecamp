@@ -14,7 +14,7 @@ const ListTodoQuestion = function({questionItems, addItem, addTextItem, addImage
             {role==0 && <AddQuestion addQuestion={handleAddQuestion}/>}
         </div>
         <ul>
-            {questionItems.map((item) => <ItemQuestion item={item} addTextItem={addTextItem} addImageItem={addImageItem}/>)}
+            {questionItems && questionItems.map((item) => <ItemQuestion item={item} addTextItem={addTextItem} addImageItem={addImageItem}/>)}
         </ul>
         
     </div>);

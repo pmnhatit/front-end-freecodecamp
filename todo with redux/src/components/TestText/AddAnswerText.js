@@ -10,6 +10,7 @@ const AddAnswerText = function({item, answerTextItem, handleAnswer}){
     }
 
     const handleClick = (e) =>{
+        // e.preventDefault();
         const payload = {
             id: item.id,
             answer: input

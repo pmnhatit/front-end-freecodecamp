@@ -5,10 +5,12 @@ const ItemText = function({item, deleteTextItem, answerTextItem, role}){
     const [isAnswer, setIsAnswer] = useState(false);
 
     const handleDelete = (e) =>{
+        // e.preventDefault();
         deleteTextItem(item.id);
     }
 
     const handleAnswer = (e) =>{
+        // e.preventDefault();
         setIsAnswer(!isAnswer);
     }
     

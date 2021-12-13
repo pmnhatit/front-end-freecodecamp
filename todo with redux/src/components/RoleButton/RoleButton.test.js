@@ -6,6 +6,12 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({adapter: new Adapter()});
 
 describe('Test Button component', () => {
+
+  // let wrapper;
+
+  //   beforeEach(() => {
+  //       wrapper = shallow(<RoleButton/>);
+  //   });
     
   it('should render admin button', () => {
     const wrapper = shallow(<RoleButton/>)
@@ -41,3 +47,16 @@ describe('Test Button component', () => {
     // expect(text).toEqual('Your role: Admin');
   });
 });
+
+// describe('Test Button component', () => {
+
+//   it('change text when admin button is clicked', () => {
+//     const wrapper = shallow(<RoleButton />);
+//     const buttonElement  = wrapper.find('#admin');
+//     const mockedEvent = { target: {}}
+//     buttonElement.simulate('click', mockedEvent);
+//     // const text = wrapper.find('p').text();
+//     // expect(text).toEqual('Your role: Admin');
+//   });
+
+// });
